@@ -61,7 +61,7 @@ def get_heading_and_first_link(url):
             heading = soup.select_one("p > b").text
             break
 
-    time.sleep(2)
+    time.sleep(0.5)
     return [heading, first_link]
 
 
