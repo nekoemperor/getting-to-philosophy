@@ -13,27 +13,32 @@
 This project is for Python/DS Coding Task.
 
 ## Introduction:
-The Twitter Sentiment Analysis Dataset contains around 36000 classified tweets of training and dataset. The trainingset itself has around 7000 tweets which each row is marked as 1 for positive sentiment and 0 for negative sentiment. I tried using this dataset with a very simple Naive Bayesian classification algorithm.
+Clicking on the first link in the main body of a Wikipedia article and repeating the process for subsequent articles would usually lead to the article Philosophy.
 
 ## Goals:
-* Show the top-10 most positive words, top-10 negative words (words more frequent with positive and negative labels respectively).
-* Plot the frequency of any word (which is inversely proportional to its rank in the frequency table) using Zipf law.
-* Train using simple classifier to predict sentiment.
+* The program should receive a Wikipedia link as an input, go to another normal link and repeat this process until either the Philosophy page is reached, or we are in an article without any outgoing wiki links or stuck in a loop.
+* Use a 0.5-second timeout between queries to avoid heavy load on Wikipedia.
+* Use https://en.wikipedia.org/wiki/Special:Random for testing.
 
 ## Technologies:
 Project is created with:
 * Python 3
-* Jupyter Notebook
-* NLTK
+* PyCharm
 
 ## Dependencies:
 see requirements.txt
 
 ## How To Use:
 * Clone this repository
-* Run the .ipynb file with jupyter notebook
+* Create a new environment in PyCharm, install the packages from requirements.txt
+* Open getting-to-philosophy.py
+* Click Run (It is automatically run this link http://en.wikipedia.org/wiki/Special:Random)
 
 ## Results
-![Top-10 words more frequent with positive labels](./results/graph1.png)
+### Get to Philosophy
+![Philosophy](./results/philosophy.gif)
+
+### Get to Loop
+![Loop](./results/loop.gif)
 
 
